@@ -3,7 +3,7 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        sh 'nerdctl container ls'
+        sh 'java -version'
       }
     }
 
