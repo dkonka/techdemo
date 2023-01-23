@@ -1,10 +1,8 @@
-from fnndsc/ubuntu-python3:latest
+FROM fnndsc/ubuntu-python3:latest
 
-#env PATH=$PATH:/usr/local/bin
+COPY . C:\Users\deept
 
-COPY . /opt/
+WORKDIR C:\Users\deept
 
-WORKDIR /opt
-RUN sh install.sh
 CMD ["app.py"]
-ENTRYPOINT ["/usr/local/bin/python"]
+ENTRYPOINT ["python"]
